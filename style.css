@@ -9,6 +9,7 @@
 
 body{
     color: #ededed;
+    background: #0f0e11;
 }
 
 .header{
@@ -16,13 +17,14 @@ body{
     top: 0;
     left: 0;
     width: 100%;
-    padding: 20px 10%;
-    background: transparent;
+    padding: 10px 10%;
+    background: #051129;
     display: flex;
-    align-items: center;
     justify-content: space-between;
+    align-items: center;
     z-index: 100;
 }
+
 
 .logo{
     position: relative;
@@ -76,9 +78,10 @@ body{
     animation-delay: .7s;
 }
 
-.home-content h3:nth-of-type(2){
+.home-content h3:nth-of-type(2) {
     margin-bottom: 30px;
-    animation: " ";
+    animation: slideTop 1s ease forwards ;
+    animation-delay:  .7s;
 }
 
 .home-content h3 span{
@@ -147,6 +150,80 @@ body{
     box-shadow: 0 0 5px cyan,
     0 0 25px cyan, 0 0 50px cyan,
     0 0 100px cyan,  0 0 200px cyan
+}
+
+.about{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: justify;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.about-img img{
+    padding-bottom: 20%;
+   
+    height: 400px;
+    width: 350px;
+    border-radius: 8px;
+}
+
+.about-text h2{
+    font-size: 60px;   
+}
+
+.about-text h2 span{
+     color: #0ef;     
+}
+
+.about-text h4{
+    font-size: 29px;
+    font-weight: 600;
+    color: #fff;
+    line-height: 1.7;
+    margin: 15px 0 30px;
+}
+
+.about-text h4 span{
+    color: #0ef;
+}
+
+.about-text p{
+    color: aliceblue;
+    font-size: 20px;
+    line-height: 1.4;
+    margin-bottom: 4rem;
+}
+
+.about-text p span{
+    color: #0ef; 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.top{
+    position: fixed;
+    bottom: 2.1rem;
+    right: 2.1rem;
+    
+}
+.top i {
+    color: #000000;
+    background: #0ef;
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 0.5rem;
 }
 
 
